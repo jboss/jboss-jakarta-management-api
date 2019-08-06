@@ -20,14 +20,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>jakarta.management.j2ee</groupId>
-        <artifactId>management-api-parent</artifactId>
-        <version>1.1.4-SNAPSHOT</version>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>35</version>
     </parent>
 
-    <groupId>jakarta.management.j2ee</groupId>
-    <artifactId>jakarta.management.j2ee-api</artifactId>
-    <version>1.1.4-SNAPSHOT</version>
+    <groupId>org.jboss.spec.javax.management.j2ee</groupId>
+    <artifactId>jboss-j2eemgmt-api_1.1_spec</artifactId>
+    <version>2.0.0.CR1-SNAPSHOT</version>
 
     <properties>
         <non.final>false</non.final>
@@ -124,29 +124,6 @@
                     <target>1.6</target>
                     <compilerArgument>-Xlint:unchecked</compilerArgument>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.glassfish.build</groupId>
-                <artifactId>spec-version-maven-plugin</artifactId>
-                <version>1.5</version>
-                <configuration>
-                    <specMode>jakarta</specMode>
-                    <spec>
-                        <nonFinal>${non.final}</nonFinal>
-                        <jarType>api</jarType>
-                        <specVersion>${spec.version}</specVersion>
-                        <specImplVersion>${project.version}</specImplVersion>
-                        <apiPackage>${extension.name}</apiPackage>
-                    </spec>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>set-spec-properties</goal>
-                            <goal>check-module</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.felix</groupId>
