@@ -33,9 +33,9 @@
         <non.final>false</non.final>
         <extension.name>javax.management.j2ee</extension.name>
         <spec.version>1.1</spec.version>
-        <bundle.symbolicName>javax.management.j2ee-api</bundle.symbolicName>
+        <bundle.symbolicName>${project.groupId}.${project.artifactId}</bundle.symbolicName>
         <vendor.name>Eclipse Project for Stable EE4J APIs</vendor.name>
-        <implementation.vendor.id>org.glassfish</implementation.vendor.id>
+        <implementation.vendor.id>${project.groupId}</implementation.vendor.id>
         <findbugs.version>2.3.1</findbugs.version>
         <findbugs.exclude>exclude.xml</findbugs.exclude>
         <findbugs.threshold>Low</findbugs.threshold>
@@ -43,7 +43,7 @@
 
     <name>${extension.name} API</name>
     <description>Jakarta Management</description>
-    <url>https://github.com/eclipse-ee4j/management-api</url>
+    <url>https://github.com/jboss/jboss-j2eemgmt-api_spec</url>
 
     <developers>
         <developer>
@@ -80,7 +80,7 @@
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/eclipse-ee4j/management-api/issues</url>
+        <url>https://issues.jboss.org/projects/JBEE/issues</url>
     </issueManagement>
 
     <mailingLists>
@@ -94,9 +94,9 @@
     </mailingLists>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com/eclipse-ee4j/management-api.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/eclipse-ee4j/management-api.git</developerConnection>
-        <url>https://github.com/eclipse-ee4j/management-api</url>
+        <connection>scm:git:ssh://git@github.com/jboss/jboss-j2eemgmt-api_spec.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/jboss/jboss-j2eemgmt-api_spec.git</developerConnection>
+        <url>https://github.com/jboss/jboss-j2eemgmt-api_spec</url>
     </scm>
 
     <build>
@@ -138,7 +138,7 @@
                         <Bundle-SymbolicName>${spec.bundle.symbolic-name}</Bundle-SymbolicName>
                         <Extension-Name>${spec.extension.name}</Extension-Name>
                         <Implementation-Version>${spec.implementation.version}</Implementation-Version>
-                        <Specification-Version>${spec.specification.version}</Specification-Version>
+                        <Specification-Version>${spec.version}</Specification-Version>
                         <Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
                         <Bundle-Description>
                             Jakarta Management ${spec.version} API Design Specification
