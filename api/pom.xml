@@ -41,7 +41,7 @@
 
     <name>${extension.name} API</name>
     <description>Jakarta Management</description>
-    <url>https://github.com/jboss/jboss-j2eemgmt-api_spec</url>
+    <url>https://github.com/jboss/jboss-jakarta-management-api</url>
 
     <developers>
         <developer>
@@ -92,9 +92,9 @@
     </mailingLists>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com/jboss/jboss-j2eemgmt-api_spec.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/jboss/jboss-j2eemgmt-api_spec.git</developerConnection>
-        <url>https://github.com/jboss/jboss-j2eemgmt-api_spec</url>
+        <connection>scm:git:ssh://git@github.com:jboss/jboss-jakarta-management-api.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:jboss/jboss-jakarta-management-api.git</developerConnection>
+        <url>https://github.com/jboss/jboss-jakarta-management-api</url>
     </scm>
 
     <build>
