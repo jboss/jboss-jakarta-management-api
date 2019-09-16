@@ -92,8 +92,8 @@
     </mailingLists>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com:jboss/jboss-jakarta-management-api.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:jboss/jboss-jakarta-management-api.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com/jboss/jboss-jakarta-management-api.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/jboss/jboss-jakarta-management-api.git</developerConnection>
         <url>https://github.com/jboss/jboss-jakarta-management-api</url>
     </scm>
 
